@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --verydarkmagenta: hsl(300, 43%, 22%);
+    --softpink: hsl(333, 80%, 67%);
+
+    --darkgrayishmagenta: hsl(303, 10%, 53%);
+    --lightgrayishmagenta: hsl(300, 24%, 96%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-color: #ece2e2;
+}
+
+.social {
+    width: 375px;
+    margin: 1em auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.bg__top {
+    position: absolute;
+    top: 0;
+}
+
+.bg__bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.bg__top__desktop, .bg__bottom__desktop {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    padding: 4em 1em;
+}
+
+.heading {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.text__heading__h2{
+    font-size: 2.2em;
+}
+
+
+.stars {
+    text-align: center;
+}
+
+.star {
+    margin: 1.5em auto;
+    background-color: var(--lightgrayishmagenta);
+    border-radius: 1em;
+    padding: 1em;
+    overflow: hidden;
+    font-size: .7em;
+    font-weight: 700;
+}
+
+.cards {
+    margin: 3em auto;
+}
+
+.card {
+    background-color: var(--verydarkmagenta);
+    color: white;
+    padding: 2em 3em;
+    text-align: left;
+    border-radius: 10px;
+    margin: 1em auto;
+}
+
+.card__heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card__status {
+    font-weight: normal;
+    margin-top: .4em;
+    opacity: .4;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.card__name, .card__status {
+    display: block;
+}
+
+@media screen and (min-width: 575px) {
+    .social {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg__top, .bg__bottom {
+        display: none;
+    }
+
+    .bg__top__desktop, .bg__bottom__desktop {
+        display: inherit;
+        position: absolute;
+    }
+
+    .bg__top__desktop {
+        top: 0;
+        left: 0;
+    }
+
+    .bg__bottom__desktop {
+        bottom: 0;
+        right: 0;
+    }
+
+    .container {
+        padding: 8em;
+        height: 100%;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text__heading {
+        flex: 1;
+        text-align: left;
+    }
+
+    .stars {
+        flex: 1;
+    }
+
+    .star {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .reviews {
+        margin-left: 20px;
+    }
+
+    .report {
+        margin-left: 60px;
+    }
+
+    .besttech {
+        margin-left: 100px;
+    }
+   
+    .cards {
+        display: flex;
+    }
+
+    .card {
+        height: 50%;
+        margin: 0 1em;
+        padding: 2em;
+    }
+
+    .one {
+        margin-top: 1em;
+    }
+
+    .two {
+        margin-top: 2em;
+    }
+
+    .three {
+        margin-top: 3em;
+    }
+
+}
+
+
+
